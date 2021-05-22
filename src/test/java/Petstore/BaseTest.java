@@ -1,15 +1,15 @@
 package Petstore;
 
+import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
 import petController.PetController;
+import utils.EnvProperties;
 
 public class BaseTest  extends PetController {
 	
-	private String BaseURL="https://petstore.swagger.io/v2/pet/";
-	
 	@BeforeClass
 	public void init(){
-		//RestAssured.baseURI=EnvProperties.getProperties().get("baseUrl");
+		RestAssured.baseURI= EnvProperties.getProperties().get("baseUrl");
 	}
 	
 }

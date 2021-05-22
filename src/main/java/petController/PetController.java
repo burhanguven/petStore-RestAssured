@@ -6,13 +6,13 @@ import static io.restassured.RestAssured.given;
 
 public class PetController {
 
-    private String BaseURL="https://petstore.swagger.io/v2/pet/";
+    private String path = "pet/";
 
     protected <T> T getPet(int id,Class<T> responseClass){
         return  given()
                 .contentType(ContentType.JSON)
                 .when()
-                .get(BaseURL+id)
+                .get(path+id)
                 .then()
                 .statusCode(200)
                 .extract().response().as(responseClass);
@@ -23,7 +23,7 @@ public class PetController {
                 .contentType(ContentType.JSON)
                 .body(body)
                 .when()
-                .post(BaseURL)
+                .post(path)
                 .then()
                 .statusCode(200).extract().as(responseClass);
     }
@@ -32,7 +32,7 @@ public class PetController {
                 .contentType(ContentType.JSON)
                 .body(body)
                 .when()
-                .put(BaseURL)
+                .put(path)
                 .then()
                 .statusCode(200).extract().as(responseClass);
     }
@@ -41,7 +41,7 @@ public class PetController {
         return  given()
                 .contentType(ContentType.JSON)
                 .when()
-                .delete(BaseURL+id)
+                .delete(path+id)
                 .then()
                 .statusCode(200).extract().as(responseClass);
     }
