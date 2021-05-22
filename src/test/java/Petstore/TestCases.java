@@ -1,9 +1,10 @@
 package Petstore;
 
-import org.testng.annotations.Test;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import PetModel.Pet;
 import builders.PetCreate;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import org.testng.annotations.Test;
+
 import static org.junit.Assert.*;
 
 public class TestCases extends BaseTest {
@@ -13,11 +14,12 @@ public class TestCases extends BaseTest {
 	Pet responsePet;
 
 	// pet olustur
-	@Test(priority = 0)
+	@Test(priority=0)
 	public void addPet() throws JsonProcessingException {
 		Pet getPet = postRequest(create.petCreateData1(), Pet.class);
 		assertNotNull(getPet.getId());
 		createPetID = getPet.getId();
+		System.out.println(getPet.toString());
 	}
 
 	// olusturulan pet var mı kontrol et

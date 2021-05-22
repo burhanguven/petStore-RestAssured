@@ -3,6 +3,8 @@ package PetModel;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.Arrays;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Pet {
 	
@@ -68,5 +70,16 @@ public class Pet {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Pet{" +
+				"id=" + id +
+				", category=" + category +
+				", name='" + name + '\'' +
+				", photoUrls=" + Arrays.toString(photoUrls) +
+				", tags=" + Arrays.toString(tags) +
+				", status='" + status + '\'' +
+				'}';
+	}
 }
