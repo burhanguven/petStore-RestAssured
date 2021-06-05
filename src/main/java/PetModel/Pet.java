@@ -2,9 +2,15 @@ package PetModel;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-import java.util.Arrays;
-
+@Getter
+@Setter
+@Builder
+@ToString
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Pet {
 	
@@ -34,44 +40,8 @@ public class Pet {
 		this.tags = tags;
 		this.status = status;
 	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public Category getCategory() {
-		return category;
-	}
-	public void setCategory(Category category) {
-		this.category = category;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String[] getPhotoUrls() {
-		return photoUrls;
-	}
-	public void setPhotoUrls(String[] photoUrls) {
-		this.photoUrls = photoUrls;
-	}
-	public Tags[] getTags() {
-		return tags;
-	}
-	public void setTags(Tags[] tags) {
-		this.tags = tags;
-	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
 
-	@Override
+	/*@Override
 	public String toString() {
 		return "Pet{" +
 				"id=" + id +
@@ -81,5 +51,5 @@ public class Pet {
 				", tags=" + Arrays.toString(tags) +
 				", status='" + status + '\'' +
 				'}';
-	}
+	}*/
 }

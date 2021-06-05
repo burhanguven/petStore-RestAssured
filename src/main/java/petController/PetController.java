@@ -18,7 +18,7 @@ public class PetController {
                 .extract().response().as(responseClass);
     }
 
-    protected <T> T postRequest(String body, Class<T> responseClass) throws JsonProcessingException {
+    protected <T> T postRequest(Object body, Class<T> responseClass) throws JsonProcessingException {
         return  given()
                 .contentType(ContentType.JSON)
                 .body(body)
@@ -27,7 +27,7 @@ public class PetController {
                 .then()
                 .statusCode(200).extract().as(responseClass);
     }
-    protected <T> T putPet(String body, Class<T> responseClass) throws JsonProcessingException{
+    protected <T> T putPet(Object body, Class<T> responseClass) throws JsonProcessingException{
         return  given()
                 .contentType(ContentType.JSON)
                 .body(body)

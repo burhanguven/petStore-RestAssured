@@ -1,5 +1,14 @@
 package PetModel;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@Builder
+@ToString
 public class Category {
 	
 	private int id;
@@ -11,19 +20,6 @@ public class Category {
 	public Category(int id, String name) {
 		super();
 		this.id = id;
-		this.name = name;
-	}
-
-	public long getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
 		this.name = name;
 	}
 }
