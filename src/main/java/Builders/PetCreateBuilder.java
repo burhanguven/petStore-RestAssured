@@ -1,4 +1,4 @@
-package builders;
+package Builders;
 
 import PetModel.Category;
 import PetModel.Pet;

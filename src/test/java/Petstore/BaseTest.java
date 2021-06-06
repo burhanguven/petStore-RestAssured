@@ -2,7 +2,7 @@ package Petstore;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
-import petController.PetController;
+import Controller.PetController;
 import utils.EnvProperties;
 
 public class BaseTest  extends PetController {

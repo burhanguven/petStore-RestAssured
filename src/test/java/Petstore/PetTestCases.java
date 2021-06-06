@@ -1,16 +1,12 @@
 package Petstore;
 
 import PetModel.Pet;
-import builders.PetCreate;
-import builders.PetCreateBuilder;
+import Builders.PetCreateBuilder;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.testng.annotations.Test;
-
 import static org.junit.Assert.*;
 
-public class TestCases extends BaseTest {
-
-	PetCreate create = new PetCreate();
+public class PetTestCases extends BaseTest {
 
 	// pet olustur
 	@Test(priority = 0)

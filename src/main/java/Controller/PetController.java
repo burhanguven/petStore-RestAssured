@@ -1,4 +1,4 @@
-package petController;
+package Controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.restassured.http.ContentType;
@@ -6,7 +6,7 @@ import static io.restassured.RestAssured.given;
 
 public class PetController {
 
-    private String path = "pet/";
+    private String path = "user/";
 
     protected <T> T getPet(int id,Class<T> responseClass){
         return  given()

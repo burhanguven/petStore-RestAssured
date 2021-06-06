@@ -6,28 +6,28 @@
     <groups>
     </groups>
     <test started-at="2021-04-04T16:21:48 EET" name="Default test" finished-at="2021-04-04T16:21:56 EET" duration-ms="7739">
-      <class name="Petstore.TestCases">
-        <test-method is-config="true" signature="init()[pri:0, instance:Petstore.TestCases@1534f01b]" started-at="2021-04-04T16:21:48 EET" name="init" finished-at="2021-04-04T16:21:48 EET" duration-ms="11" status="PASS">
+      <class name="Petstore.PetTestCases">
+        <test-method is-config="true" signature="init()[pri:0, instance:Petstore.PetTestCases@1534f01b]" started-at="2021-04-04T16:21:48 EET" name="init" finished-at="2021-04-04T16:21:48 EET" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="addPet()[pri:0, instance:Petstore.TestCases@1534f01b]" started-at="2021-04-04T16:21:48 EET" name="addPet" finished-at="2021-04-04T16:21:53 EET" duration-ms="5084" status="PASS">
+        <test-method signature="addPet()[pri:0, instance:Petstore.PetTestCases@1534f01b]" started-at="2021-04-04T16:21:48 EET" name="addPet" finished-at="2021-04-04T16:21:53 EET" duration-ms="5084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPet -->
-        <test-method signature="getPetId()[pri:1, instance:Petstore.TestCases@1534f01b]" started-at="2021-04-04T16:21:53 EET" name="getPetId" finished-at="2021-04-04T16:21:54 EET" duration-ms="933" status="PASS">
+        <test-method signature="getPetId()[pri:1, instance:Petstore.PetTestCases@1534f01b]" started-at="2021-04-04T16:21:53 EET" name="getPetId" finished-at="2021-04-04T16:21:54 EET" duration-ms="933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPetId -->
-        <test-method signature="updatePet()[pri:2, instance:Petstore.TestCases@1534f01b]" started-at="2021-04-04T16:21:54 EET" name="updatePet" finished-at="2021-04-04T16:21:55 EET" duration-ms="819" status="PASS">
+        <test-method signature="updatePet()[pri:2, instance:Petstore.PetTestCases@1534f01b]" started-at="2021-04-04T16:21:54 EET" name="updatePet" finished-at="2021-04-04T16:21:55 EET" duration-ms="819" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePet -->
-        <test-method signature="deletePet()[pri:3, instance:Petstore.TestCases@1534f01b]" started-at="2021-04-04T16:21:55 EET" name="deletePet" finished-at="2021-04-04T16:21:56 EET" duration-ms="829" status="PASS">
+        <test-method signature="deletePet()[pri:3, instance:Petstore.PetTestCases@1534f01b]" started-at="2021-04-04T16:21:55 EET" name="deletePet" finished-at="2021-04-04T16:21:56 EET" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletePet -->
-      </class> <!-- Petstore.TestCases -->
+      </class> <!-- Petstore.PetTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
